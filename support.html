@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="LiftBuddy Support — Get help with your account, rides, and more. We're here for you.">
+    <meta name="theme-color" content="#22C55E">
+    <title>Support — LiftBuddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="eco-campaign.css">
+    <style>
+        .page-hero{position:relative;min-height:45vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 60px;overflow:hidden;}
+        .page-hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;}
+        .page-hero-bg img{width:100%;height:100%;object-fit:cover;}
+        .page-hero-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(21,128,61,0.92),rgba(2,132,199,0.88));}
+        .page-hero-content{position:relative;z-index:1;}
+        .page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2rem,6vw,3.5rem);font-weight:700;color:#fff;margin-bottom:1rem;}
+        .page-hero p{font-size:1.15rem;color:rgba(255,255,255,0.9);max-width:600px;margin:0 auto;}
+        .breadcrumb{display:flex;gap:0.5rem;justify-content:center;margin-bottom:1rem;font-size:0.9rem;}
+        .breadcrumb a{color:rgba(255,255,255,0.8);text-decoration:none;}
+        .breadcrumb span{color:rgba(255,255,255,0.6);}
+        .support-section{padding:60px 0;}
+        .support-section.alt-bg{background:var(--gray-50);}
+        .support-section h2{font-family:'Poppins',sans-serif;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;color:var(--gray-900);margin-bottom:2rem;text-align:center;}
+        .support-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-bottom:3rem;}
+        .support-card{background:#fff;padding:2rem;border-radius:1rem;border:1px solid var(--gray-200);text-align:center;transition:transform 0.3s,box-shadow 0.3s;}
+        .support-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .support-card i{font-size:2.5rem;color:var(--eco-green);margin-bottom:1rem;}
+        .support-card h3{font-family:'Poppins',sans-serif;font-size:1.25rem;color:var(--gray-900);margin-bottom:0.5rem;}
+        .support-card p{color:var(--gray-600);line-height:1.6;margin-bottom:1rem;}
+        .support-card a{color:var(--eco-green);font-weight:500;text-decoration:none;}
+        .support-card a:hover{text-decoration:underline;}
+        .contact-form{max-width:700px;margin:0 auto;background:#fff;padding:2.5rem;border-radius:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);}
+        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+        .form-group{margin-bottom:1rem;}
+        .form-group label{display:block;font-weight:500;color:var(--gray-900);margin-bottom:0.5rem;}
+        .form-group input,.form-group select,.form-group textarea{width:100%;padding:0.875rem 1rem;border:1px solid var(--gray-200);border-radius:0.5rem;font-size:1rem;font-family:inherit;transition:border-color 0.3s,box-shadow 0.3s;}
+        .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--eco-green);box-shadow:0 0 0 3px rgba(34,197,94,0.1);}
+        .form-group textarea{resize:vertical;min-height:120px;}
+        .form-submit{width:100%;padding:1rem;background:linear-gradient(135deg,var(--eco-green),var(--eco-blue));color:#fff;font-size:1rem;font-weight:600;border:none;border-radius:0.5rem;cursor:pointer;transition:transform 0.3s,box-shadow 0.3s;}
+        .form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(34,197,94,0.3);}
+        @media(max-width:600px){.form-row{grid-template-columns:1fr;}}
+    </style>
+</head>
+<body>
+    <nav class="eco-nav" id="ecoNav">
+        <div class="eco-container">
+            <a href="index.html" class="eco-logo">🌱 LiftBuddy</a>
+            <ul class="eco-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+                <li><a href="index.html#join" class="eco-nav-cta">Join the Movement</a></li>
+            </ul>
+            <button class="eco-menu-toggle" id="ecoMenuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80" alt="Support team" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Support</span></nav>
+            <h1>We're Here to Help</h1>
+            <p>Have questions or need assistance? Our team is ready to support you.</p>
+        </div>
+    </section>
+
+    <section class="support-section">
+        <div class="eco-container">
+            <h2>Quick Help</h2>
+            <div class="support-grid">
+                <div class="support-card eco-fade-in">
+                    <i class="fas fa-book"></i>
+                    <h3>FAQ</h3>
+                    <p>Find answers to commonly asked questions about LiftBuddy.</p>
+                    <a href="faq.html">Browse FAQ →</a>
+                </div>
+                <div class="support-card eco-fade-in">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safety</h3>
+                    <p>Learn about our safety features and best practices for secure rides.</p>
+                    <a href="safety.html">Safety Centre →</a>
+                </div>
+                <div class="support-card eco-fade-in">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Campus Ambassador</h3>
+                    <p>Join our programme and bring LiftBuddy to your campus.</p>
+                    <a href="campus-ambassador.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-section alt-bg">
+        <div class="eco-container">
+            <h2>Contact Us</h2>
+            <form class="contact-form eco-fade-in" id="supportForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Select a topic</option>
+                        <option value="account">Account Issues</option>
+                        <option value="rides">Ride Problems</option>
+                        <option value="payment">Payment Questions</option>
+                        <option value="safety">Safety Concerns</option>
+                        <option value="feedback">Feedback & Suggestions</option>
+                        <option value="partnership">Partnership Inquiry</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="support-section">
+        <div class="eco-container">
+            <h2>Other Ways to Reach Us</h2>
+            <div class="support-grid">
+                <div class="support-card eco-fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>For general inquiries and support requests.</p>
+                    <a href="mailto:support@liftbuddy.in">support@liftbuddy.in</a>
+                </div>
+                <div class="support-card eco-fade-in">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Follow us for updates and DM us your queries.</p>
+                    <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer">@liftbuddy.in</a>
+                </div>
+                <div class="support-card eco-fade-in">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with us for partnerships and careers.</p>
+                    <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer">LiftBuddy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="eco-footer">
+        <div class="eco-container">
+            <div class="eco-footer-grid">
+                <div class="eco-footer-brand">
+                    <a href="index.html" class="eco-footer-logo">🌱 LiftBuddy</a>
+                    <p class="eco-footer-tagline">A Community for Greener Travel</p>
+                    <div class="eco-footer-social">
+                        <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="eco-footer-links"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="safety.html">Safety</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Get Involved</h4><ul><li><a href="index.html#join">Join the Movement</a></li><li><a href="campus-ambassador.html">Campus Ambassador</a></li><li><a href="support.html">Support</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms & Conditions</a></li></ul></div>
+            </div>
+            <div class="eco-footer-bottom"><p>© 2025 <span>LiftBuddy</span> — A Community for Greener Travel 🌏</p></div>
+        </div>
+    </footer>
+
+    <button class="eco-back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        const ecoNav=document.getElementById('ecoNav'),backToTop=document.getElementById('backToTop'),ecoMenuToggle=document.getElementById('ecoMenuToggle'),ecoNavLinks=document.querySelector('.eco-nav-links');
+        window.addEventListener('scroll',()=>{ecoNav.classList.toggle('scrolled',window.scrollY>50);backToTop.classList.toggle('visible',window.scrollY>300);});
+        ecoMenuToggle.addEventListener('click',()=>{ecoMenuToggle.classList.toggle('active');ecoNavLinks.classList.toggle('active');document.body.style.overflow=ecoNavLinks.classList.contains('active')?'hidden':'';});
+        backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.1});
+        document.querySelectorAll('.eco-fade-in').forEach(el=>observer.observe(el));
+        document.getElementById('supportForm').addEventListener('submit',function(e){e.preventDefault();alert('Thank you! Your message has been sent. We will get back to you within 24 hours.');this.reset();});
+    </script>
+</body>
+</html>

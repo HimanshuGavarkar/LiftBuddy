@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Frequently Asked Questions about LiftBuddy — Find answers to common questions about carpooling and ride-sharing.">
+    <meta name="theme-color" content="#22C55E">
+    <title>FAQ — LiftBuddy</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="eco-campaign.css">
+    <style>
+        /* Page Hero Section */
+        .page-hero {
+            position: relative;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 140px 20px 60px;
+            background: linear-gradient(135deg, rgba(21, 128, 61, 0.95), rgba(2, 132, 199, 0.9));
+        }
+        
+        .page-hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .page-hero p {
+            font-size: clamp(1rem, 2.5vw, 1.15rem);
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .breadcrumb a:hover {
+            color: #fff;
+        }
+        
+        .breadcrumb span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: clamp(40px, 8vw, 60px) 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-category {
+            margin-bottom: 2.5rem;
+        }
+        
+        .faq-category h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            font-weight: 600;
+            color: var(--eco-green);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--gray-200);
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            background: var(--gray-50);
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: var(--eco-green-pale);
+        }
+        
+        .faq-question i {
+            color: var(--eco-green);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 1.25rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        /* Contact CTA Section */
+        .contact-cta {
+            background: var(--gray-50);
+            padding: clamp(40px, 8vw, 60px) 20px;
+            text-align: center;
+        }
+        
+        .contact-cta h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.5rem, 4vw, 1.75rem);
+            margin-bottom: 1rem;
+            color: var(--gray-900);
+        }
+        
+        .contact-cta p {
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            font-size: clamp(0.95rem, 2vw, 1rem);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-hero {
+                min-height: 35vh;
+                padding: 120px 20px 50px;
+            }
+            
+            .faq-question {
+                padding: 1rem;
+                font-size: 0.95rem;
+            }
+            
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+            
+            .faq-item.active .faq-answer {
+                padding: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-hero {
+                padding: 100px 15px 40px;
+            }
+            
+            .faq-section {
+                padding: 40px 15px;
+            }
+            
+            .faq-category h2 {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="eco-nav" id="ecoNav">
+        <div class="eco-container">
+            <a href="index.html" class="eco-logo">🌱 LiftBuddy</a>
+            <ul class="eco-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="index.html#join" class="eco-nav-cta">Join the Movement</a></li>
+            </ul>
+            <button class="eco-menu-toggle" id="ecoMenuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div>
+            <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>FAQ</span></nav>
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about LiftBuddy.</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="eco-container">
+            <div class="faq-category">
+                <h2><i class="fas fa-info-circle"></i> General</h2>
+                <div class="faq-item">
+                    <div class="faq-question">What is LiftBuddy? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">LiftBuddy is a community-driven platform that connects commuters for shared rides. We help students and daily commuters reduce carbon emissions, save money, and build connections by carpooling.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is LiftBuddy free to use? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes! LiftBuddy is completely free to join and use. We believe sustainable travel should be accessible to everyone. There are no hidden fees or subscriptions.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How is LiftBuddy different from other ride-sharing apps? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">LiftBuddy is a community movement, not a commercial service. We focus on connecting regular commuters for daily rides, with a strong emphasis on environmental impact and community building.</div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2><i class="fas fa-shield-alt"></i> Safety</h2>
+                <div class="faq-item">
+                    <div class="faq-question">How do you verify users? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">All users go through a verification process including phone number verification and optional ID verification. We also have a rating system where users can review each other after rides.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What safety features does LiftBuddy have? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">We offer live ride tracking, emergency SOS button, trusted contacts sharing, in-app chat (no need to share phone numbers), and a comprehensive reporting system.</div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2><i class="fas fa-car"></i> Rides</h2>
+                <div class="faq-item">
+                    <div class="faq-question">How do I find a ride? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Simply enter your pickup and drop-off locations, select your preferred time, and browse available rides. You can also set up recurring ride alerts for your daily commute.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I offer a ride? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Post your route, departure time, and number of available seats. Interested riders will send you requests, and you can choose who to accept based on their profile and ratings.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What if I need to cancel a ride? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">You can cancel a ride through the app. We encourage cancelling as early as possible to give others time to find alternatives. Frequent last-minute cancellations may affect your rating.</div>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h2><i class="fas fa-leaf"></i> Environmental Impact</h2>
+                <div class="faq-item">
+                    <div class="faq-question">How much CO₂ can I save by carpooling? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">On average, each shared ride saves approximately 2 kg of CO₂. A daily commuter sharing rides can save over 500 kg of CO₂ per year — equivalent to planting several trees!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do you calculate environmental impact? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">We calculate savings based on the distance travelled, vehicle type, and number of passengers. Your personal impact dashboard shows your cumulative CO₂ savings over time.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cta">
+        <h2>Still have questions?</h2>
+        <p>Our support team is here to help you.</p>
+        <a href="support.html" class="eco-btn eco-btn-green"><i class="fas fa-headset"></i> Contact Support</a>
+    </section>
+
+    <footer class="eco-footer">
+        <div class="eco-container">
+            <div class="eco-footer-grid">
+                <div class="eco-footer-brand">
+                    <a href="index.html" class="eco-footer-logo">🌱 LiftBuddy</a>
+                    <p class="eco-footer-tagline">A Community for Greener Travel</p>
+                    <div class="eco-footer-social">
+                        <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="eco-footer-links"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="safety.html">Safety</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Get Involved</h4><ul><li><a href="index.html#join">Join the Movement</a></li><li><a href="campus-ambassador.html">Campus Ambassador</a></li><li><a href="support.html">Support</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms & Conditions</a></li></ul></div>
+            </div>
+            <div class="eco-footer-bottom"><p>© 2025 <span>LiftBuddy</span> — A Community for Greener Travel 🌏</p></div>
+        </div>
+    </footer>
+
+    <button class="eco-back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        // Navigation and Back to Top
+        const ecoNav = document.getElementById('ecoNav');
+        const backToTop = document.getElementById('backToTop');
+        const ecoMenuToggle = document.getElementById('ecoMenuToggle');
+        const ecoNavLinks = document.querySelector('.eco-nav-links');
+        
+        // Scroll Effects
+        window.addEventListener('scroll', () => {
+            ecoNav.classList.toggle('scrolled', window.scrollY > 50);
+            backToTop.classList.toggle('visible', window.scrollY > 300);
+        });
+        
+        // Mobile Menu Toggle
+        ecoMenuToggle.addEventListener('click', () => {
+            ecoMenuToggle.classList.toggle('active');
+            ecoNavLinks.classList.toggle('active');
+            document.body.style.overflow = ecoNavLinks.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Back to Top Button
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

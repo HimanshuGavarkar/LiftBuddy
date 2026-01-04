@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="LiftBuddy Safety Guidelines — Learn about our safety features and best practices for secure carpooling.">
+    <meta name="theme-color" content="#22C55E">
+    <title>Safety — LiftBuddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="eco-campaign.css">
+    <style>
+        .page-hero{position:relative;min-height:45vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 60px;overflow:hidden;}
+        .page-hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;}
+        .page-hero-bg img{width:100%;height:100%;object-fit:cover;}
+        .page-hero-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(21,128,61,0.92),rgba(2,132,199,0.88));}
+        .page-hero-content{position:relative;z-index:1;}
+        .page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2rem,6vw,3.5rem);font-weight:700;color:#fff;margin-bottom:1rem;}
+        .page-hero p{font-size:1.15rem;color:rgba(255,255,255,0.9);max-width:600px;margin:0 auto;}
+        .breadcrumb{display:flex;gap:0.5rem;justify-content:center;margin-bottom:1rem;font-size:0.9rem;}
+        .breadcrumb a{color:rgba(255,255,255,0.8);text-decoration:none;}
+        .breadcrumb span{color:rgba(255,255,255,0.6);}
+        .emergency-banner{background:linear-gradient(90deg,#dc2626,#ef4444);color:#fff;padding:1.25rem;text-align:center;}
+        .emergency-banner p{margin:0;font-weight:600;}
+        .emergency-banner a{color:#fff;text-decoration:underline;}
+        .safety-section{padding:60px 0;}
+        .safety-section.alt-bg{background:var(--gray-50);}
+        .safety-section h2{font-family:'Poppins',sans-serif;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;color:var(--gray-900);margin-bottom:2rem;text-align:center;}
+        .safety-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
+        .safety-card{background:#fff;padding:2rem;border-radius:1rem;border:1px solid var(--gray-200);text-align:center;transition:transform 0.3s,box-shadow 0.3s;}
+        .safety-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .safety-card i{font-size:2.5rem;color:var(--eco-green);margin-bottom:1rem;}
+        .safety-card h3{font-family:'Poppins',sans-serif;font-size:1.25rem;color:var(--gray-900);margin-bottom:0.75rem;}
+        .safety-card p{color:var(--gray-600);line-height:1.7;}
+        .tips-list{max-width:800px;margin:0 auto;}
+        .tips-list li{padding:1rem 0;border-bottom:1px solid var(--gray-200);display:flex;align-items:flex-start;gap:1rem;}
+        .tips-list li:last-child{border-bottom:none;}
+        .tips-list i{color:var(--eco-green);font-size:1.25rem;margin-top:0.25rem;}
+        .tips-list strong{color:var(--gray-900);}
+        .tips-list p{margin:0;color:var(--gray-600);line-height:1.6;}
+    </style>
+</head>
+<body>
+    <nav class="eco-nav" id="ecoNav">
+        <div class="eco-container">
+            <a href="index.html" class="eco-logo">🌱 LiftBuddy</a>
+            <ul class="eco-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="index.html#join" class="eco-nav-cta">Join the Movement</a></li>
+            </ul>
+            <button class="eco-menu-toggle" id="ecoMenuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=80" alt="Safe carpooling" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Safety</span></nav>
+            <h1>Safety First</h1>
+            <p>Your safety is our top priority. Learn about our features and best practices.</p>
+        </div>
+    </section>
+
+    <div class="emergency-banner">
+        <p>🚨 In an emergency, call <a href="tel:112">112</a> (India) or <a href="tel:100">100</a> (Police)</p>
+    </div>
+
+    <section class="safety-section">
+        <div class="eco-container">
+            <h2>Safety Features</h2>
+            <div class="safety-grid">
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Verified Profiles</h3>
+                    <p>All users go through verification including phone, email, and optional ID verification for added trust.</p>
+                </div>
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-location-arrow"></i>
+                    <h3>Live Ride Tracking</h3>
+                    <p>Share your live location with trusted contacts. They can follow your journey in real-time.</p>
+                </div>
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-bell"></i>
+                    <h3>Emergency SOS</h3>
+                    <p>One-tap emergency button alerts your trusted contacts and shares your location instantly.</p>
+                </div>
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-star"></i>
+                    <h3>Rating System</h3>
+                    <p>Review and rate users after each ride. Build trust through community feedback.</p>
+                </div>
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-comments"></i>
+                    <h3>In-App Chat</h3>
+                    <p>Communicate without sharing personal phone numbers. Keep your contact info private.</p>
+                </div>
+                <div class="safety-card eco-fade-in">
+                    <i class="fas fa-flag"></i>
+                    <h3>Report System</h3>
+                    <p>Report any concerns instantly. Our team reviews all reports within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety-section alt-bg">
+        <div class="eco-container">
+            <h2>Safety Tips for Riders</h2>
+            <ul class="tips-list">
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Check the driver's profile</strong><p>Review ratings, reviews, and verification status before accepting a ride.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Share your trip details</strong><p>Let a friend or family member know your ride details — driver info, route, and expected arrival time.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Verify the vehicle</strong><p>Before getting in, confirm the car's make, model, and licence plate match what's shown in the app.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Sit in the back seat</strong><p>Whenever possible, sit in the back for more personal space and easy exit access.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Trust your instincts</strong><p>If something feels wrong, don't hesitate to cancel the ride or ask to be dropped off.</p></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="safety-section">
+        <div class="eco-container">
+            <h2>Safety Tips for Drivers</h2>
+            <ul class="tips-list">
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Verify your passengers</strong><p>Check the rider's profile and confirm their name before starting the trip.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Keep your vehicle maintained</strong><p>Ensure your car is in good condition with valid insurance and registration.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Follow traffic rules</strong><p>Always drive safely, follow speed limits, and avoid distractions.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <i class="fas fa-check-circle"></i>
+                    <div><strong>Set clear expectations</strong><p>Communicate about music, AC, stops, and other preferences upfront.</p></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="eco-join">
+        <div class="eco-container">
+            <h2 class="eco-join-title">Need Help?</h2>
+            <p class="eco-join-text">Our support team is available to assist you with any safety concerns.</p>
+            <div class="eco-join-actions">
+                <a href="support.html" class="eco-btn eco-btn-white"><i class="fas fa-headset"></i> Contact Support</a>
+                <a href="mailto:safety@liftbuddy.green" class="eco-btn eco-btn-ghost"><i class="fas fa-envelope"></i> safety@liftbuddy.green</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="eco-footer">
+        <div class="eco-container">
+            <div class="eco-footer-grid">
+                <div class="eco-footer-brand">
+                    <a href="index.html" class="eco-footer-logo">🌱 LiftBuddy</a>
+                    <p class="eco-footer-tagline">A Community for Greener Travel</p>
+                    <div class="eco-footer-social">
+                        <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="eco-footer-links"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="safety.html">Safety</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Get Involved</h4><ul><li><a href="index.html#join">Join the Movement</a></li><li><a href="campus-ambassador.html">Campus Ambassador</a></li><li><a href="support.html">Support</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms & Conditions</a></li></ul></div>
+            </div>
+            <div class="eco-footer-bottom"><p>© 2025 <span>LiftBuddy</span> — A Community for Greener Travel 🌏</p></div>
+        </div>
+    </footer>
+
+    <button class="eco-back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        const ecoNav=document.getElementById('ecoNav'),backToTop=document.getElementById('backToTop'),ecoMenuToggle=document.getElementById('ecoMenuToggle'),ecoNavLinks=document.querySelector('.eco-nav-links');
+        window.addEventListener('scroll',()=>{ecoNav.classList.toggle('scrolled',window.scrollY>50);backToTop.classList.toggle('visible',window.scrollY>300);});
+        ecoMenuToggle.addEventListener('click',()=>{ecoMenuToggle.classList.toggle('active');ecoNavLinks.classList.toggle('active');document.body.style.overflow=ecoNavLinks.classList.contains('active')?'hidden':'';});
+        backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.1});
+        document.querySelectorAll('.eco-fade-in').forEach(el=>observer.observe(el));
+    </script>
+</body>
+</html>

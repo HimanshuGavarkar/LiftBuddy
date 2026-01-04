@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="LiftBuddy — A community movement helping students and daily commuters reduce carbon emissions by sharing everyday rides.">
+    <meta name="keywords" content="carpooling, ride sharing, green mobility, reduce carbon, eco-friendly travel, community rides">
+    <meta name="author" content="LiftBuddy">
+    <meta name="theme-color" content="#22C55E">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://liftbuddy.in">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="LiftBuddy — Move Together. Save the Planet.">
+    <meta property="og:description" content="A community movement helping students and daily commuters reduce carbon emissions by sharing everyday rides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liftbuddy.in">
+    <meta property="og:image" content="https://liftbuddy.in/hero-image.jpg">
+    <meta property="og:site_name" content="LiftBuddy">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LiftBuddy — Move Together. Save the Planet.">
+    <meta name="twitter:description" content="Join the green mobility movement. Share rides, reduce carbon emissions.">
+    <meta name="twitter:image" content="https://liftbuddy.in/hero-image.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LiftBuddy",
+      "url": "https://liftbuddy.in",
+      "logo": "https://liftbuddy.in/images/logo.png",
+      "description": "A community movement helping students and daily commuters reduce carbon emissions by sharing everyday rides.",
+      "sameAs": [
+        "https://instagram.com/liftbuddy.in",
+        "https://linkedin.com/company/liftbuddy",
+        "https://twitter.com/liftbuddy"
+      ],
+      "founders": [
+        {"@type": "Person", "name": "Himanshu Gavarkar"},
+        {"@type": "Person", "name": "Jaya Paliwal"}
+      ]
+    }
+    </script>
+    
+    <title>LiftBuddy — Move Together. Save the Planet.</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P31JQY2PPL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P31JQY2PPL');
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" defer>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="eco-campaign.css">
+    <link rel="preload" href="images/hero-traffic.jpg" as="image">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-icon">🌱</div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <h2 class="loader-text">LiftBuddy</h2>
+            <p class="loader-subtitle">Loading greener travel...</p>
+        </div>
+    </div>
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="eco-nav" id="ecoNav">
+        <div class="eco-container">
+            <a href="index.html" class="eco-logo">🌱 LiftBuddy</a>
+            <ul class="eco-nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-it-matters">Why It Matters</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#join" class="eco-nav-cta">Join the Movement</a></li>
+            </ul>
+            <button class="eco-menu-toggle" id="ecoMenuToggle" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="eco-hero" id="home">
+        <div class="eco-hero-bg">
+            <img src="hero-image.jpg" alt="City traffic representing the need for shared mobility" class="eco-hero-img" loading="eager" width="1920" height="1080">
+            <div class="eco-hero-overlay"></div>
+        </div>
+        <div class="eco-hero-content">
+            <div class="eco-hero-badge">
+                <i class="fas fa-leaf"></i>
+                <span>Green Mobility Movement</span>
+            </div>
+            <h1 class="eco-hero-title">Move Together.<br><span>Save the Planet.</span></h1>
+            <p class="eco-hero-subtitle">LiftBuddy is a community movement helping students and daily commuters reduce carbon emissions by sharing everyday rides.</p>
+            <div class="eco-hero-actions">
+                <a href="https://chat.whatsapp.com/FQTFTgZxVNi2yfvwzYOncx" target="_blank" rel="noopener noreferrer" class="eco-btn eco-btn-primary">
+                    <i class="fas fa-hand-fist"></i> Join the Movement
+                </a>
+                <a href="#about" class="eco-btn eco-btn-secondary">Learn More</a>
+            </div>
+            <div class="eco-download-btns">
+                <a href="#" class="eco-download-btn" aria-label="Download LiftBuddy for Android">
+                    <i class="fab fa-android"></i>
+                    <span><span class="small">Download for</span><span class="large">Android</span></span>
+                </a>
+                <a href="#" class="eco-download-btn" aria-label="Download LiftBuddy for iOS">
+                    <i class="fab fa-apple"></i>
+                    <span><span class="small">Download for</span><span class="large">iOS</span></span>
+                </a>
+            </div>
+        </div>
+        <div class="eco-hero-scroll">
+            <span>Scroll</span>
+            <div class="eco-scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="eco-about" id="about" itemscope itemtype="https://schema.org/AboutPage">
+        <main id="main-content">
+        <div class="eco-container">
+            <div class="eco-about-content eco-fade-in">
+                <span class="eco-section-tag">
+                    <i class="fas fa-globe-americas"></i> About the Movement
+                </span>
+                <h2 class="eco-section-title" itemprop="name">A People-Led Initiative for Greener Cities</h2>
+                <p class="eco-about-text" itemprop="description">LiftBuddy promotes <strong>shared travel</strong> as a simple daily action to reduce pollution and protect our environment. Every shared ride means fewer vehicles, lower emissions, and cleaner air.</p>
+                <p class="eco-about-text"><strong>This is not about profit</strong> — it's about people, planet, and progress. We believe collective action can transform how cities move.</p>
+                <div class="eco-highlight-quote">
+                    <i class="fas fa-quote-left"></i>
+                    Small actions, when multiplied by millions of people, can transform the world.
+                </div>
+                <a href="about.html" class="eco-btn eco-btn-outline eco-btn-outline-spaced">
+                    Learn More About Us <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="eco-about-visual eco-fade-in">
+                <div class="eco-image-frame">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Friends carpooling together" class="eco-about-img" loading="lazy" width="800" height="600">
+                </div>
+                <div class="eco-stat-card">
+                    <span class="eco-stat-big">50%</span>
+                    <span class="eco-stat-text">Less Emissions Per Ride</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters Section -->
+    <section class="eco-why-matters" id="why-it-matters">
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag">
+                    <i class="fas fa-seedling"></i> Why It Matters
+                </span>
+                <h2 class="eco-section-title">Making a Difference, One Ride at a Time</h2>
+                <p class="eco-section-desc">Every choice to share a ride contributes to cleaner air and a healthier planet.</p>
+            </div>
+            <div class="eco-cards-grid">
+                <div class="eco-feature-card eco-fade-in">
+                    <div class="eco-feature-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Reduce Carbon Emissions</h3>
+                    <p>Cut your carbon footprint by sharing rides instead of driving alone. Every shared journey makes a difference.</p>
+                </div>
+                <div class="eco-feature-card eco-fade-in">
+                    <div class="eco-feature-icon"><i class="fas fa-wind"></i></div>
+                    <h3>Cleaner Air & Less Traffic</h3>
+                    <p>Fewer cars on the road means less congestion and cleaner air for everyone in our cities.</p>
+                </div>
+                <div class="eco-feature-card eco-fade-in">
+                    <div class="eco-feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Community-Led Travel</h3>
+                    <p>Connect with fellow commuters, build relationships, and create a network of eco-conscious travellers.</p>
+                </div>
+                <div class="eco-feature-card eco-fade-in">
+                    <div class="eco-feature-icon"><i class="fas fa-gas-pump"></i></div>
+                    <h3>Lower Fuel Consumption</h3>
+                    <p>Save money on fuel costs while reducing overall petroleum consumption and dependency.</p>
+                </div>
+                <div class="eco-feature-card eco-fade-in">
+                    <div class="eco-feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Sustainable Daily Mobility</h3>
+                    <p>Make sustainability part of your everyday routine without changing your destination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="eco-how-works" id="how-it-works">
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=80" alt="Road trip scenery" class="eco-section-bg-img" loading="lazy" width="1920" height="1080">
+        <div class="eco-section-overlay"></div>
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag"><i class="fas fa-route"></i> How It Works</span>
+                <h2 class="eco-section-title">Simple Steps to Greener Travel</h2>
+                <p class="eco-section-desc">Getting started is easy. Join the movement in three simple steps.</p>
+            </div>
+            <div class="eco-steps">
+                <div class="eco-step eco-fade-in">
+                    <div class="eco-step-number">1</div>
+                    <h3>Share or Request a Lift</h3>
+                    <p>Post your ride or search for someone heading your way. It's quick and simple.</p>
+                </div>
+                <div class="eco-step eco-fade-in">
+                    <div class="eco-step-number">2</div>
+                    <h3>Match with Nearby Commuters</h3>
+                    <p>Find verified users travelling the same route at similar times.</p>
+                </div>
+                <div class="eco-step eco-fade-in">
+                    <div class="eco-step-number">3</div>
+                    <h3>Travel Together & Save Carbon</h3>
+                    <p>Share the ride, reduce emissions, and make new connections along the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="eco-impact" id="impact">
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag eco-section-tag-light">
+                    <i class="fas fa-chart-line"></i> Our Impact
+                </span>
+                <h2 class="eco-section-title">Your Daily Ride Creates Climate Impact</h2>
+                <p class="eco-section-desc">Small actions scale into massive environmental change.</p>
+            </div>
+            <div class="eco-stats-grid">
+                <div class="eco-stat eco-fade-in">
+                    <div class="eco-stat-number" data-count="50">0</div>
+                    <div class="eco-stat-label">kg CO₂ Reduced</div>
+                </div>
+                <div class="eco-stat eco-fade-in">
+                    <div class="eco-stat-number" data-count="20">0</div>
+                    <div class="eco-stat-label">Rides Shared</div>
+                </div>
+                <div class="eco-stat eco-fade-in">
+                    <div class="eco-stat-number" data-count="25">0</div>
+                    <div class="eco-stat-label">People Participating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CO₂ Calculator Section -->
+    <section class="eco-calculator" id="calculator">
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag eco-section-tag-blue">
+                    <i class="fas fa-calculator"></i> Carbon Calculator
+                </span>
+                <h2 class="eco-section-title">Calculate Your Impact</h2>
+                <p class="eco-section-desc">See how much CO₂ you can save by carpooling</p>
+            </div>
+            <div class="calculator-card eco-fade-in">
+                <div class="calculator-grid">
+                    <div class="calc-input-group">
+                        <label for="distance">Daily Distance (km)</label>
+                        <input type="number" id="distance" value="20" min="1" max="200" required aria-label="Daily distance in kilometers">
+                    </div>
+                    <div class="calc-input-group">
+                        <label for="days">Days per Month</label>
+                        <input type="number" id="days" value="20" min="1" max="31" required aria-label="Number of days per month">
+                    </div>
+                    <div class="calc-input-group">
+                        <label for="passengers">Passengers Sharing</label>
+                        <select id="passengers" aria-label="Number of passengers sharing">
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4" selected>4 People</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="calc-button" id="calculateBtn">
+                    <i class="fas fa-leaf"></i> Calculate Savings
+                </button>
+                <div class="calc-results" id="calcResults">
+                    <div class="calc-result-card">
+                        <div class="calc-icon">🌱</div>
+                        <div class="calc-value" id="co2Saved">0</div>
+                        <div class="calc-label">kg CO₂ Saved/Month</div>
+                    </div>
+                    <div class="calc-result-card">
+                        <div class="calc-icon">🌳</div>
+                        <div class="calc-value" id="treeEquiv">0</div>
+                        <div class="calc-label">Trees Equivalent</div>
+                    </div>
+                    <div class="calc-result-card">
+                        <div class="calc-icon">💰</div>
+                        <div class="calc-value" id="moneySaved">₹0</div>
+                        <div class="calc-label">Money Saved</div>
+                    </div>
+                </div>
+                <div class="calc-share" id="calcShare">
+                    <p>Share your impact!</p>
+                    <button class="share-btn whatsapp-share" id="shareWhatsApp">
+                        <i class="fab fa-whatsapp"></i> Share on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join CTA Section -->
+    <section class="eco-join" id="join">
+        <div class="eco-container">
+            <h2 class="eco-join-title eco-fade-in">Join the Movement</h2>
+            <p class="eco-join-text eco-fade-in">Help build greener cities — one shared ride at a time. Be part of the change our planet needs.</p>
+            <div class="eco-join-actions eco-fade-in">
+                <a href="https://chat.whatsapp.com/FQTFTgZxVNi2yfvwzYOncx" target="_blank" rel="noopener noreferrer" class="eco-btn eco-btn-white">
+                    <i class="fas fa-hand-fist"></i> Join the Movement
+                </a>
+                <a href="#" class="eco-btn eco-btn-ghost">
+                    <i class="fab fa-android"></i> Download for Android
+                </a>
+                <a href="#" class="eco-btn eco-btn-ghost">
+                    <i class="fab fa-apple"></i> Download for iOS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="eco-gallery" id="gallery">
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag"><i class="fas fa-images"></i> Gallery</span>
+                <h2 class="eco-section-title">Our Movement in Action</h2>
+            </div>
+            <div class="eco-gallery-grid">
+                <div class="eco-gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80" alt="People carpooling" loading="lazy" width="800" height="600">
+                    <div class="eco-gallery-overlay"><span>Shared Commuting</span></div>
+                </div>
+                <div class="eco-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=600&q=80" alt="University campus" loading="lazy" width="600" height="450">
+                    <div class="eco-gallery-overlay"><span>Campus Initiatives</span></div>
+                </div>
+                <div class="eco-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Green cityscape" loading="lazy" width="600" height="450">
+                    <div class="eco-gallery-overlay"><span>Greener Cities</span></div>
+                </div>
+                <div class="eco-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=80" alt="Student community" loading="lazy" width="600" height="450">
+                    <div class="eco-gallery-overlay"><span>Student Community</span></div>
+                </div>
+                <div class="eco-gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Natural landscape" loading="lazy" width="600" height="450">
+                    <div class="eco-gallery-overlay"><span>Protecting Nature</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="eco-contact" id="contact">
+        <div class="eco-container">
+            <div class="eco-section-header eco-fade-in">
+                <span class="eco-section-tag"><i class="fas fa-envelope"></i> Get in Touch</span>
+                <h2 class="eco-section-title">Contact Us</h2>
+                <p class="eco-section-desc">Have questions? Want to partner with us? We'd love to hear from you.</p>
+            </div>
+            <div class="eco-contact-links eco-fade-in">
+                <a href="mailto:support@liftbuddy.in" class="eco-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@liftbuddy.in</span>
+                </a>
+                <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" class="eco-contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>@liftbuddy.in</span>
+                </a>
+                <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" class="eco-contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LiftBuddy Movement</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="eco-container">
+            <div class="eco-footer-grid">
+                <div class="eco-footer-brand">
+                    <a href="index.html" class="eco-footer-logo">🌱 LiftBuddy</a>
+                    <p class="eco-footer-tagline">A Community for Greener Travel</p>
+                    <div class="eco-footer-social">
+                        <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="eco-footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#why-it-matters">Why It Matters</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="safety.html">Safety</a></li>
+                    </ul>
+                </div>
+                <div class="eco-footer-links">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#join">Join the Movement</a></li>
+                        <li><a href="campus-ambassador.html">Campus Ambassador</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="eco-footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="support.html">Report an Issue</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="eco-footer-bottom">
+                <p>© 2025 <span>LiftBuddy</span> — A Community for Greener Travel 🌏</p>
+            </div>
+        </div>
+        </main>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="eco-back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            // Add a small delay for smoother transition
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                // Remove from DOM after animation completes
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }, 300);
+        });
+        
+        // Navigation scroll effect
+        const ecoNav = document.getElementById('ecoNav');
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                ecoNav.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                ecoNav.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Mobile menu toggle
+        const ecoMenuToggle = document.getElementById('ecoMenuToggle');
+        const ecoNavLinks = document.querySelector('.eco-nav-links');
+        
+        if (ecoMenuToggle && ecoNavLinks) {
+            ecoMenuToggle.addEventListener('click', () => {
+                ecoMenuToggle.classList.toggle('active');
+                ecoNavLinks.classList.toggle('active');
+                document.body.style.overflow = ecoNavLinks.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close menu on link click
+            document.querySelectorAll('.eco-nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    ecoMenuToggle.classList.remove('active');
+                    ecoNavLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Close menu on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && ecoNavLinks.classList.contains('active')) {
+                    ecoMenuToggle.classList.remove('active');
+                    ecoNavLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (ecoNavLinks.classList.contains('active') && 
+                    !ecoNavLinks.contains(e.target) && 
+                    !ecoMenuToggle.contains(e.target)) {
+                    ecoMenuToggle.classList.remove('active');
+                    ecoNavLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Back to top button
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.eco-fade-in').forEach(el => observer.observe(el));
+
+        // Animated counters
+        function animateCounter(el, target) {
+            let current = 0;
+            const increment = target / 40;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target.toLocaleString() + '+';
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current).toLocaleString() + '+';
+                }
+            }, 40);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.eco-stat-number[data-count]').forEach(stat => {
+                        animateCounter(stat, parseInt(stat.dataset.count));
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsGrid = document.querySelector('.eco-stats-grid');
+        if (statsGrid) statsObserver.observe(statsGrid);
+
+        // CO2 Calculator
+        const calculateBtn = document.getElementById('calculateBtn');
+        const calcResults = document.getElementById('calcResults');
+        const calcShare = document.getElementById('calcShare');
+        
+        if (calculateBtn) {
+            calculateBtn.addEventListener('click', () => {
+                const distance = parseFloat(document.getElementById('distance').value);
+                const days = parseFloat(document.getElementById('days').value);
+                const passengers = parseFloat(document.getElementById('passengers').value);
+                
+                // Input validation
+                if (!distance || distance < 1 || distance > 200) {
+                    alert('Please enter a valid distance between 1 and 200 km');
+                    return;
+                }
+                
+                if (!days || days < 1 || days > 31) {
+                    alert('Please enter valid days between 1 and 31');
+                    return;
+                }
+                
+                // Average car emits 0.12 kg CO2 per km
+                const totalKm = distance * days;
+                const co2PerCar = totalKm * 0.12;
+                const co2Saved = co2PerCar * ((passengers - 1) / passengers);
+                const treeEquiv = Math.round(co2Saved / 21.77); // 1 tree absorbs ~21.77 kg CO2/year
+                const moneySaved = Math.round((totalKm / passengers) * 6); // Approx ₹6/km fuel cost
+                
+                document.getElementById('co2Saved').textContent = Math.round(co2Saved);
+                document.getElementById('treeEquiv').textContent = treeEquiv;
+                document.getElementById('moneySaved').textContent = '₹' + moneySaved;
+                
+                calcResults.style.display = 'grid';
+                calcShare.style.display = 'block';
+                
+                // Share functionality
+                document.getElementById('shareWhatsApp').onclick = () => {
+                    const text = `🌱 I'm saving ${Math.round(co2Saved)} kg CO₂ per month by carpooling with LiftBuddy! That's equal to ${treeEquiv} trees planted. Join me: https://liftbuddy.in`;
+                    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+                };
+            });
+        }
+        
+        // Referral Share
+        const shareReferral = document.getElementById('shareReferral');
+        if (shareReferral) {
+            shareReferral.addEventListener('click', () => {
+                const text = '🚗🌿 Join LiftBuddy and get 20% off your first ride! Share rides, save money, and reduce carbon emissions together. https://liftbuddy.in';
+                if (navigator.share) {
+                    navigator.share({ title: 'Join LiftBuddy', text: text, url: 'https://liftbuddy.in' });
+                } else {
+                    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Become a LiftBuddy Campus Ambassador — Lead the green travel movement at your college and earn rewards.">
+    <meta name="theme-color" content="#22C55E">
+    <title>Campus Ambassador — LiftBuddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="eco-campaign.css">
+    <style>
+        .page-hero{position:relative;min-height:50vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 60px;overflow:hidden;}
+        .page-hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;}
+        .page-hero-bg img{width:100%;height:100%;object-fit:cover;}
+        .page-hero-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(21,128,61,0.92),rgba(2,132,199,0.88));}
+        .page-hero-content{position:relative;z-index:1;}
+        .page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2rem,6vw,3.5rem);font-weight:700;color:#fff;margin-bottom:1rem;}
+        .page-hero p{font-size:1.15rem;color:rgba(255,255,255,0.9);max-width:600px;margin:0 auto;}
+        .breadcrumb{display:flex;gap:0.5rem;justify-content:center;margin-bottom:1rem;font-size:0.9rem;}
+        .breadcrumb a{color:rgba(255,255,255,0.8);text-decoration:none;}
+        .breadcrumb span{color:rgba(255,255,255,0.6);}
+        .ambassador-section{padding:60px 0;}
+        .ambassador-section.alt-bg{background:var(--gray-50);}
+        .ambassador-section h2{font-family:'Poppins',sans-serif;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;color:var(--gray-900);margin-bottom:2rem;text-align:center;}
+        .ambassador-section p.subtitle{text-align:center;color:var(--gray-600);max-width:700px;margin:0 auto 2.5rem;font-size:1.1rem;}
+        .perks-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+        .perk-card{background:#fff;padding:2rem;border-radius:1rem;border:1px solid var(--gray-200);text-align:center;transition:transform 0.3s,box-shadow 0.3s;}
+        .perk-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .perk-card i{font-size:2.5rem;color:var(--eco-green);margin-bottom:1rem;}
+        .perk-card h3{font-family:'Poppins',sans-serif;font-size:1.25rem;color:var(--gray-900);margin-bottom:0.75rem;}
+        .perk-card p{color:var(--gray-600);line-height:1.7;}
+        .steps-list{max-width:700px;margin:0 auto;counter-reset:step;}
+        .steps-list li{padding:1.5rem;background:#fff;border-radius:1rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;border:1px solid var(--gray-200);}
+        .steps-list li::before{counter-increment:step;content:counter(step);background:var(--eco-green);color:#fff;width:36px;height:36px;min-width:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;}
+        .steps-list h4{font-family:'Poppins',sans-serif;color:var(--gray-900);margin:0 0 0.5rem;}
+        .steps-list p{margin:0;color:var(--gray-600);line-height:1.6;}
+        .apply-form{max-width:700px;margin:0 auto;background:#fff;padding:2.5rem;border-radius:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);}
+        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+        .form-group{margin-bottom:1rem;}
+        .form-group label{display:block;font-weight:500;color:var(--gray-900);margin-bottom:0.5rem;}
+        .form-group input,.form-group select,.form-group textarea{width:100%;padding:0.875rem 1rem;border:1px solid var(--gray-200);border-radius:0.5rem;font-size:1rem;font-family:inherit;transition:border-color 0.3s,box-shadow 0.3s;}
+        .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--eco-green);box-shadow:0 0 0 3px rgba(34,197,94,0.1);}
+        .form-group textarea{resize:vertical;min-height:100px;}
+        .form-submit{width:100%;padding:1rem;background:linear-gradient(135deg,var(--eco-green),var(--eco-blue));color:#fff;font-size:1rem;font-weight:600;border:none;border-radius:0.5rem;cursor:pointer;transition:transform 0.3s,box-shadow 0.3s;}
+        .form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(34,197,94,0.3);}
+        @media(max-width:600px){.form-row{grid-template-columns:1fr;}}
+    </style>
+</head>
+<body>
+    <nav class="eco-nav" id="ecoNav">
+        <div class="eco-container">
+            <a href="index.html" class="eco-logo">🌱 LiftBuddy</a>
+            <ul class="eco-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="index.html#join" class="eco-nav-cta">Join the Movement</a></li>
+            </ul>
+            <button class="eco-menu-toggle" id="ecoMenuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&q=80" alt="Students campus" loading="eager">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Campus Ambassador</span></nav>
+            <h1>Campus Ambassador Programme</h1>
+            <p>Lead the green travel revolution at your college. Make an impact and earn exclusive rewards.</p>
+        </div>
+    </section>
+
+    <section class="ambassador-section">
+        <div class="eco-container">
+            <h2>Why Become an Ambassador?</h2>
+            <p class="subtitle">Join a community of student leaders driving sustainable change across India's campuses.</p>
+            <div class="perks-grid">
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificate & LOR</h3>
+                    <p>Receive an official certificate and letter of recommendation for your portfolio.</p>
+                </div>
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-gift"></i>
+                    <h3>Exclusive Rewards</h3>
+                    <p>Earn free rides, merchandise, and cash rewards based on your performance.</p>
+                </div>
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>Network & Grow</h3>
+                    <p>Connect with like-minded students and industry professionals.</p>
+                </div>
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real Experience</h3>
+                    <p>Gain hands-on experience in marketing, community building, and leadership.</p>
+                </div>
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Make an Impact</h3>
+                    <p>Directly contribute to reducing carbon emissions and promoting sustainability.</p>
+                </div>
+                <div class="perk-card eco-fade-in">
+                    <i class="fas fa-star"></i>
+                    <h3>Early Access</h3>
+                    <p>Be the first to try new features and provide feedback to shape the product.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ambassador-section alt-bg">
+        <div class="eco-container">
+            <h2>How It Works</h2>
+            <ol class="steps-list">
+                <li class="eco-fade-in">
+                    <div><h4>Apply Below</h4><p>Fill out the application form with your details and why you want to join.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <div><h4>Get Selected</h4><p>Our team reviews applications and selects ambassadors based on passion and potential.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <div><h4>Complete Onboarding</h4><p>Join a virtual onboarding session to learn about LiftBuddy and your role.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <div><h4>Spread the Word</h4><p>Promote LiftBuddy on your campus through events, social media, and word of mouth.</p></div>
+                </li>
+                <li class="eco-fade-in">
+                    <div><h4>Earn Rewards</h4><p>Track your impact and unlock rewards as you hit milestones.</p></div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="ambassador-section" id="apply">
+        <div class="eco-container">
+            <h2>Apply Now</h2>
+            <form class="apply-form eco-fade-in" id="ambassadorForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                    </div>
+                    <div class="form-group">
+                        <label for="college">College/University *</label>
+                        <input type="text" id="college" name="college" required placeholder="Your college name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year of Study *</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                            <option value="5">5th Year</option>
+                            <option value="pg">Post Graduate</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="social">Social Media Handle (Instagram/LinkedIn)</label>
+                    <input type="text" id="social" name="social" placeholder="@yourhandle">
+                </div>
+                <div class="form-group">
+                    <label for="motivation">Why do you want to be a Campus Ambassador? *</label>
+                    <textarea id="motivation" name="motivation" required placeholder="Tell us about your interest in sustainability and what motivates you to join..."></textarea>
+                </div>
+                <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="eco-footer">
+        <div class="eco-container">
+            <div class="eco-footer-grid">
+                <div class="eco-footer-brand">
+                    <a href="index.html" class="eco-footer-logo">🌱 LiftBuddy</a>
+                    <p class="eco-footer-tagline">A Community for Greener Travel</p>
+                    <div class="eco-footer-social">
+                        <a href="https://instagram.com/liftbuddy.in" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/liftbuddy" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="eco-footer-links"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="safety.html">Safety</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Get Involved</h4><ul><li><a href="index.html#join">Join the Movement</a></li><li><a href="campus-ambassador.html">Campus Ambassador</a></li><li><a href="support.html">Support</a></li></ul></div>
+                <div class="eco-footer-links"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms & Conditions</a></li></ul></div>
+            </div>
+            <div class="eco-footer-bottom"><p>© 2025 <span>LiftBuddy</span> — A Community for Greener Travel 🌏</p></div>
+        </div>
+    </footer>
+
+    <button class="eco-back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        const ecoNav=document.getElementById('ecoNav'),backToTop=document.getElementById('backToTop'),ecoMenuToggle=document.getElementById('ecoMenuToggle'),ecoNavLinks=document.querySelector('.eco-nav-links');
+        window.addEventListener('scroll',()=>{ecoNav.classList.toggle('scrolled',window.scrollY>50);backToTop.classList.toggle('visible',window.scrollY>300);});
+        ecoMenuToggle.addEventListener('click',()=>{ecoMenuToggle.classList.toggle('active');ecoNavLinks.classList.toggle('active');document.body.style.overflow=ecoNavLinks.classList.contains('active')?'hidden':'';});
+        backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');});},{threshold:0.1});
+        document.querySelectorAll('.eco-fade-in').forEach(el=>observer.observe(el));
+        document.getElementById('ambassadorForm').addEventListener('submit',function(e){e.preventDefault();alert('Thank you for applying! We will review your application and get back to you within 3-5 business days.');this.reset();});
+    </script>
+</body>
+</html>
